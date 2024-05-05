@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y python3 python3-pip
 RUN pip3 install --no-cache-dir python-dotenv schedule requests pandas
 
 # Copia los ficheros necesarios
-COPY ./main.py /robot.py
+COPY ./main.py /main.py
 
 # Damos permisos a los ficheros y aplicamos mycron a crontab
 RUN chmod 7777 main.py
