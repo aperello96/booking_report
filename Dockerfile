@@ -16,4 +16,4 @@ COPY ./main.py /main.py
 RUN chmod 7777 main.py
 
 # Start program
-CMD ["sh", "-c", "python3 main.py > python.log 2>&1"]
+CMD ["python3", "/main.py"]
