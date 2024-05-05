@@ -65,7 +65,7 @@ def report(df, df_b):
     try:
         df1.loc[indexes, 'Estado'] = '<-'
     except:
-        print("Se ha eliminado alguna entrada")
+        print("Some entry has been deleted")
     #Sort by 'Entrada'
     df1 = df1.sort_values(by='Entrada')
 
