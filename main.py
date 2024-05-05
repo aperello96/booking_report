@@ -74,7 +74,7 @@ def report(df, df_b):
     for index, row in df1.iterrows():
         entrada = pd.to_datetime(row['Entrada']).strftime('%d/%m/%Y')
         salida = pd.to_datetime(row['Salida']).strftime('%d/%m/%Y')
-        line = f"{row['Reserva']} {entrada} - {salida} ({row['Personas']}) ({row['Precio']}) {row['Estado']}\n"
+        line = f"{row['Reserva']} {entrada} - {salida} ({row['Personas']}) ({row['Precio']}$) {row['Estado']}\n"
         text += line
 
     #Send message
